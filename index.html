@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aruna Devi C | Interactive Portfolio</title>
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="Portfolio of Aruna Devi C, an Information Technology student, Web Developer, and Patent Holder. Showcase of web development, UI/UX design, and IoT projects.">
+    <meta name="keywords"
+        content="Aruna Devi C, Portfolio, Web Developer, IT Student, Smart Helmet Patent, BGR Neo Limited, College Admission Portal">
+    <meta name="author" content="Aruna Devi C">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="cursor-dot"></div>
+    <div id="custom-cursor-ring" class="cursor-ring"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-accent">&lt;</span>Aruna<span class="logo-accent"> /&gt;</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#hero" class="nav-link active" id="nav-hero-lnk">Home</a>
+            <a href="#about" class="nav-link" id="nav-about-lnk">About</a>
+            <a href="#experience" class="nav-link" id="nav-exp-lnk">Experience</a>
+            <a href="#patent" class="nav-link" id="nav-patent-lnk">Patent</a>
+            <a href="#projects" class="nav-link" id="nav-projects-lnk">Projects</a>
+            <a href="#skills" class="nav-link" id="nav-skills-lnk">Skills</a>
+            <a href="#certificates" class="nav-link" id="nav-certificates-lnk">Certifications</a>
+            <a href="#contact" class="nav-link" id="nav-contact-lnk">Contact</a>
+        </nav>
+        <div class="header-cta">
+            <a href="#contact" class="btn btn-sm btn-outline">Let's Connect</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation" id="nav-toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <!-- Background Canvas for Interactive Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content container">
+            <div class="hero-text-wrapper">
+                <span class="badge glow-cyan">Welcome to my Space</span>
+                <h1 class="hero-title">
+                    Hi, I am <br>
+                    <span class="gradient-text">Aruna Devi C</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I am a <span id="ticker-text" class="ticker-text">Web Developer</span><span
+                        class="cursor-blink">|</span>
+                </h2>
+                <p class="hero-desc">
+                    Information Technology student specializing in crafting immersive web interfaces, learning AWS cloud
+                    fundamentals, and designing intuitive UI/UX experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#patent" class="btn btn-primary">
+                        <span>Explore Patent</span>
+                        <i class="fa-solid fa-microchip"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <span>View Projects</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual-wrapper">
+                <!-- Glowing abstract UI element -->
+                <div class="glowing-orb-container">
+                    <div class="glowing-orb orb-1"></div>
+                    <div class="glowing-orb orb-2"></div>
+                    <div class="glass-terminal">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="terminal-title">arunadevi.json</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="token key">"name"</span>: <span class="token val">"Aruna Devi C"</span>,
+<span class="token key">"role"</span>: <span class="token val">"IT Engineer / Web Developer"</span>,
+<span class="token key">"education"</span>: {
+    <span class="token key">"degree"</span>: <span class="token val">"B.Tech - IT"</span>,
+    <span class="token key">"college"</span>: <span class="token val">"SSVPEC, Chennai"</span>,
+    <span class="token key">"cgpa"</span>: <span class="token val">8.0</span>
+},
+<span class="token key">"innovations"</span>: [
+    <span class="token val">"IoT Smart Helmet (Patent Recognized)"</span>
+],
+<span class="token key">"status"</span>: <span class="token val">"Ready to create beautiful interfaces"</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse-icon">
+                <span class="wheel"></span>
+            </span>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Biography</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <!-- Profile Image Card -->
+                <div class="profile-card glass-card reveal">
+                    <div class="profile-img-wrapper">
+                        <div class="profile-img-glow"></div>
+                        <img src="profile.png" alt="Aruna Devi C" class="profile-img">
+                    </div>
+                    <div class="profile-card-details">
+                        <h3 class="profile-name">Aruna Devi C</h3>
+                        <p class="profile-tagline">IT Student & Developer</p>
+                        <div class="profile-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Chennai, Tamilnadu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-info-card glass-card reveal">
+                    <h3>My Story</h3>
+                    <p class="about-text">
+                        I am a highly motivated and enthusiastic Information Technology student with a deep passion for
+                        programming and web technologies. I balance strong logical foundations (Python, Java, SQL) with
+                        an eye for user experiences (UI/UX design, Figma).
+                    </p>
+                    <p class="about-text">
+                        With solid exposure to AWS cloud fundamentals, I seek opportunities to solve real-world problems
+                        through software development and cloud-native computing. I love collaborating, learning quickly,
+                        and turning complex constraints into clean code.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">2027</span>
+                            <span class="stat-label">Graduation Year</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8.0</span>
+                            <span class="stat-label">B.Tech CGPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Patent Innovation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card glass-card reveal">
+                    <h3>Education Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2023 - 2027 (Expected)</span>
+                                <h4>Bachelor of Technology</h4>
+                                <span class="timeline-subtitle">Information Technology</span>
+                                <p class="timeline-desc">Prince Shri Venkateshwara Padmavathy Engineering College,
+                                    Chennai, Tamilnadu.</p>
+                                <div class="academic-badge"><i class="fa-solid fa-graduation-cap"></i> CGPA: 8.0 / 10
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Primary & Secondary</span>
+                                <h4>Strong Foundation</h4>
+                                <span class="timeline-subtitle">Analytical & Science Education</span>
+                                <p class="timeline-desc">Developed coding skills, logical reasoning, and teamwork
+                                    competencies early on, leading to engineering enrollment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="experience-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Career Path</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="experience-card-wrapper reveal">
+                <div class="experience-glow-border">
+                    <div class="experience-card glass-card">
+                        <div class="experience-header">
+                            <div class="exp-title-info">
+                                <h3>Web Development Intern</h3>
+                                <span class="exp-company"><i class="fa-solid fa-building"></i> BGR Neo Limited,
+                                    Ambattur</span>
+                            </div>
+                            <span class="exp-duration"><i class="fa-solid fa-calendar-days"></i> June - July 2025</span>
+                        </div>
+                        <div class="experience-body">
+                            <ul class="exp-bullets">
+                                <li>
+                                    <div class="exp-bullet-icon"><i class="fa-solid fa-palette"></i></div>
+                                    <div class="exp-bullet-text">
+                                        <strong>Web Interface Design & Development:</strong> Designed user-friendly web
+                                        interfaces following solid UI/UX principles and built responsive, clean webpages
+                                        using HTML and CSS for enhanced usability.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="exp-bullet-icon"><i class="fa-solid fa-code"></i></div>
+                                    <div class="exp-bullet-text">
+                                        <strong>Front-End Architecture:</strong> Created structured layout patterns,
+                                        modular designs, and highly visually-appealing interfaces that adjust seamlessly
+                                        to different device dimensions.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="exp-bullet-icon"><i class="fa-solid fa-users-gear"></i></div>
+                                    <div class="exp-bullet-text">
+                                        <strong>Teamwork & Industry Standards:</strong> Collaborated on real-world
+                                        development tasks, gaining first-hand knowledge of modern workflow standards,
+                                        version control patterns, and agile testing processes.
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">UI/UX Principles</span>
+                                <span class="tech-tag">Responsive Design</span>
+                                <span class="tech-tag">Figma Layouts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patent Section (Smart Helmet) -->
+    <section id="patent" class="patent-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Innovation & Publications</span>
+                <h2 class="section-title">Patent Recognized Innovation</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="patent-grid">
+                <div class="patent-info reveal">
+                    <div class="patent-badge"><i class="fa-solid fa-certificate"></i> PATENT RECOGNIZED</div>
+                    <h3>Smart Helmet</h3>
+                    <p class="patent-desc">
+                        A cyber-physical IoT safety system designed for two-wheeler riders. The integration combines
+                        alcohol detection, real-time helmet compliance monitoring, and crash-sensing capabilities linked
+                        to remote emergency notification protocols.
+                    </p>
+
+                    <div class="interactive-instruction">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Hover or click the glowing dots on the schematic diagram to inspect the structural
+                            components.</span>
+                    </div>
+
+                    <div class="patent-features-list">
+                        <div class="feature-item active" data-spot="1" id="feature-spot-1">
+                            <div class="feature-num">01</div>
+                            <div class="feature-detail">
+                                <h4>Alcohol Detection System</h4>
+                                <p>Integrated breathalyzer sensor near the rider's mouth. If blood alcohol levels exceed
+                                    legal parameters, the ignition transmission signals are blocked, preventing engine
+                                    start.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-spot="2" id="feature-spot-2">
+                            <div class="feature-num">02</div>
+                            <div class="feature-detail">
+                                <h4>Helmet Compliance Monitor</h4>
+                                <p>Uses smart switches/pressure sensors inside the padding and buckle mechanisms to
+                                    guarantee that the helmet is correctly worn and strapped before the vehicle
+                                    registers as operational.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-spot="3" id="feature-spot-3">
+                            <div class="feature-num">03</div>
+                            <div class="feature-detail">
+                                <h4>IoT Alert Transmitter</h4>
+                                <p>Embedded accelerometers monitor collision-grade impact force. In case of anomaly, a
+                                    GPS-equipped cellular module transmits emergency alerts with location details to
+                                    nearby emergency services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="patent-visual glass-card reveal">
+                    <div class="schematic-container">
+                        <!-- Custom SVG Helmet Design with hotspots -->
+                        <svg class="helmet-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Definitions for glows and gradients -->
+                            <defs>
+                                <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.6" />
+                                    <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+                                </radialGradient>
+                                <linearGradient id="helmetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#1e293b" />
+                                    <stop offset="100%" stop-color="#0f172a" />
+                                </linearGradient>
+                                <linearGradient id="visorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
+                                    <stop offset="50%" stop-color="#4facfe" stop-opacity="0.3" />
+                                    <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.1" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Grid background for technical blueprint vibe -->
+                            <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+                                <line x1="50" y1="0" x2="50" y2="400" />
+                                <line x1="100" y1="0" x2="100" y2="400" />
+                                <line x1="150" y1="0" x2="150" y2="400" />
+                                <line x1="200" y1="0" x2="200" y2="400" />
+                                <line x1="250" y1="0" x2="250" y2="400" />
+                                <line x1="300" y1="0" x2="300" y2="400" />
+                                <line x1="350" y1="0" x2="350" y2="400" />
+                                <line x1="0" y1="50" x2="400" y2="50" />
+                                <line x1="0" y1="100" x2="400" y2="100" />
+                                <line x1="0" y1="150" x2="400" y2="150" />
+                                <line x1="0" y1="200" x2="400" y2="200" />
+                                <line x1="0" y1="250" x2="400" y2="250" />
+                                <line x1="0" y1="300" x2="400" y2="300" />
+                                <line x1="0" y1="350" x2="400" y2="350" />
+                            </g>
+
+                            <!-- Outer Helmet Shell -->
+                            <path
+                                d="M 120 100 C 120 60, 280 60, 280 100 C 280 100, 310 120, 310 180 C 310 240, 270 270, 250 280 C 230 290, 180 290, 150 280 C 130 270, 90 240, 90 180 C 90 120, 120 100, 120 100 Z"
+                                fill="url(#helmetGrad)" stroke="#475569" stroke-width="3" />
+
+                            <!-- Visor (Goggles/Shield) -->
+                            <path
+                                d="M 170 140 C 220 130, 290 130, 305 180 C 305 210, 280 240, 220 240 C 180 240, 160 215, 160 180 C 160 155, 170 140, 170 140 Z"
+                                fill="url(#visorGrad)" stroke="#00f2fe" stroke-width="2" />
+
+                            <!-- Visor Highlight -->
+                            <path d="M 180 155 Q 220 148 275 160" fill="none" stroke="#ffffff" stroke-opacity="0.4"
+                                stroke-width="2" />
+
+                            <!-- Helmet Chin Guard / Bottom trim -->
+                            <path
+                                d="M 95 200 C 95 240, 120 275, 150 280 C 165 282, 175 250, 170 230 C 168 220, 155 200, 150 200 Z"
+                                fill="#1e293b" stroke="#475569" stroke-width="2" />
+
+                            <!-- Buckle / Strap -->
+                            <path d="M 152 281 L 165 315 L 180 315 L 172 281" fill="#334155" stroke="#475569"
+                                stroke-width="1.5" />
+
+                            <!-- Hotspot 1 (Alcohol Detection Sensor - chin/mouth area) -->
+                            <g class="hotspot" data-spot="1" id="hotspot-1">
+                                <circle cx="160" cy="220" r="18" fill="url(#glowGrad)" />
+                                <circle class="pulse-ring" cx="160" cy="220" r="10" fill="none" stroke="#00f2fe"
+                                    stroke-width="2" />
+                                <circle cx="160" cy="220" r="5" fill="#00f2fe" />
+                            </g>
+
+                            <!-- Hotspot 2 (Compliance switches - Temple/Strap Area) -->
+                            <g class="hotspot" data-spot="2" id="hotspot-2">
+                                <circle cx="160" cy="300" r="18" fill="url(#glowGrad)" />
+                                <circle class="pulse-ring" cx="160" cy="300" r="10" fill="none" stroke="#00f2fe"
+                                    stroke-width="2" />
+                                <circle cx="160" cy="300" r="5" fill="#00f2fe" />
+                            </g>
+
+                            <!-- Hotspot 3 (IoT transmitter / emergency unit - Back of Head) -->
+                            <g class="hotspot" data-spot="3" id="hotspot-3">
+                                <circle cx="280" cy="180" r="18" fill="url(#glowGrad)" />
+                                <circle class="pulse-ring" cx="280" cy="180" r="10" fill="none" stroke="#00f2fe"
+                                    stroke-width="2" />
+                                <circle cx="280" cy="180" r="5" fill="#00f2fe" />
+                            </g>
+
+                            <!-- Technical callout lines -->
+                            <line id="line-1" x1="160" y1="220" x2="60" y2="220" stroke="#00f2fe" stroke-width="1.5"
+                                stroke-dasharray="3,3" opacity="0.5" />
+                            <line id="line-2" x1="160" y1="300" x2="60" y2="300" stroke="#00f2fe" stroke-width="1.5"
+                                stroke-dasharray="3,3" opacity="0.5" />
+                            <line id="line-3" x1="280" y1="180" x2="350" y2="180" stroke="#00f2fe" stroke-width="1.5"
+                                stroke-dasharray="3,3" opacity="0.5" />
+
+                            <text x="35" y="210" fill="#00f2fe" font-size="10" font-family="Outfit" opacity="0.8">ALC
+                                SENSOR</text>
+                            <text x="35" y="325" fill="#00f2fe" font-size="10" font-family="Outfit" opacity="0.8">STRAP
+                                SENSOR</text>
+                            <text x="315" y="168" fill="#00f2fe" font-size="10" font-family="Outfit" opacity="0.8">IoT
+                                COMPONENT</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Portfolio Showcase</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- College Admission Website Portal Grid -->
+            <div class="project-showcase-grid">
+                <div class="project-info-column reveal">
+                    <div class="project-meta">
+                        <span class="badge glow-cyan">HTML, CSS, JS</span>
+                        <span class="project-type"><i class="fa-solid fa-code"></i> Frontend Application</span>
+                    </div>
+                    <h3>College Admission Website Portal</h3>
+                    <p class="project-description">
+                        Designed to streamline the enrollment pipeline for college applications. This project simplifies
+                        and organizes the online admission workflow, incorporating dynamic user-centric forms,
+                        structured course eligibility navigators, and multi-device responsive stylesheets.
+                    </p>
+                    <p class="project-highlights">
+                        <strong>Key Integrations Demonstrated:</strong>
+                    <ul class="highlight-list">
+                        <li><i class="fa-solid fa-check"></i> Real-time regex input validating to minimize bad entries.
+                        </li>
+                        <li><i class="fa-solid fa-check"></i> Dynamic course and branch fee estimator widgets.</li>
+                        <li><i class="fa-solid fa-check"></i> Clean layout designed from user journey wireframes.</li>
+                    </ul>
+                    </p>
+                    <div class="project-action-info">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>Try the live interactive demo of the portal's core feature inside the mock desktop screen
+                            on the right!</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Browser Mockup Containing Interactive Mini Application -->
+                <div class="project-interactive-column reveal">
+                    <div class="mock-browser-frame glass-card">
+                        <div class="browser-header">
+                            <div class="window-controls">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="address-bar">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>admission-portal.edu/apply</span>
+                            </div>
+                        </div>
+                        <div class="browser-content">
+                            <!-- Start of Live Portal Application Demo -->
+                            <div class="portal-app">
+                                <div class="portal-header">
+                                    <h4>SSVPEC Admission Form</h4>
+                                    <p>Estimate fees & pre-validate application credentials</p>
+                                </div>
+                                <form id="portal-demo-form" class="portal-form" onsubmit="return false;">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="p-name">Full Name</label>
+                                            <input type="text" id="p-name" placeholder="John Doe" required>
+                                            <span class="validate-msg" id="name-msg"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="p-email">Email Address</label>
+                                            <input type="email" id="p-email" placeholder="john@example.com" required>
+                                            <span class="validate-msg" id="email-msg"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="p-dept">Preferred Department</label>
+                                            <select id="p-dept">
+                                                <option value="it" data-fee="85000">Information Technology</option>
+                                                <option value="cse" data-fee="90000">Computer Science</option>
+                                                <option value="ece" data-fee="80000">Electronics & Comm</option>
+                                                <option value="eee" data-fee="75000">Electrical & Electronics</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="p-marks">High School Marks (%)</label>
+                                            <input type="number" id="p-marks" min="0" max="100" placeholder="e.g. 85"
+                                                required>
+                                            <span class="validate-msg" id="marks-msg"></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Dynamic Fee & Eligibility Indicator -->
+                                    <div class="calculator-panel">
+                                        <div class="panel-item">
+                                            <span class="panel-label">Calculated Base Fee:</span>
+                                            <span class="panel-value" id="calc-fee">₹ 85,000 / Year</span>
+                                        </div>
+                                        <div class="panel-item">
+                                            <span class="panel-label">Scholarship Status:</span>
+                                            <span class="panel-value status-badge" id="calc-sch">No Scholarship</span>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-sm btn-primary w-100" id="portal-submit-btn">
+                                        <span>Submit Admission Pre-Screen</span>
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                                <div id="portal-toast" class="portal-toast-msg"></div>
+                            </div>
+                            <!-- End of Live Portal Application Demo -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separation Line -->
+            <div class="project-separator"></div>
+
+            <!-- Survey Data Normalizer Grid -->
+            <div class="project-showcase-grid">
+                <!-- Desktop Browser Mockup Containing Interactive Normalizer Dashboard -->
+                <div class="project-interactive-column reveal">
+                    <div class="mock-browser-frame glass-card">
+                        <div class="browser-header">
+                            <div class="window-controls">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="address-bar">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>survey-normalizer.dev/dashboard</span>
+                            </div>
+                        </div>
+                        <div class="browser-content">
+                            <!-- Start of Live Normalizer Dashboard Demo -->
+                            <div class="normalizer-app">
+                                <div class="normalizer-top">
+                                    <div class="normalizer-file-info">
+                                        <i class="fa-solid fa-file-csv"></i>
+                                        <span class="file-name">customer_feedback_2026.csv</span>
+                                    </div>
+                                    <span class="history-badge"><i class="fa-solid fa-database"></i> Connected to
+                                        Supabase</span>
+                                </div>
+
+                                <!-- Stats Grid -->
+                                <div class="norm-stats-grid">
+                                    <div class="norm-stat-box">
+                                        <span class="box-label">Rows</span>
+                                        <span class="box-val" id="norm-rows">1,240</span>
+                                    </div>
+                                    <div class="norm-stat-box">
+                                        <span class="box-label">Missing</span>
+                                        <span class="box-val" id="norm-missing">14</span>
+                                    </div>
+                                    <div class="norm-stat-box">
+                                        <span class="box-label">Duplicates</span>
+                                        <span class="box-val" id="norm-dupes">3</span>
+                                    </div>
+                                    <div class="norm-stat-box">
+                                        <span class="box-label">Completeness</span>
+                                        <span class="box-val" id="norm-complete">98.2%</span>
+                                    </div>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="norm-actions">
+                                    <button class="btn-norm-action" id="btn-fill-missing"
+                                        title="Fill missing values with median/mode">
+                                        <i class="fa-solid fa-wand-magic"></i> Fill Missing
+                                    </button>
+                                    <button class="btn-norm-action" id="btn-drop-dupes" title="Remove duplicate rows">
+                                        <i class="fa-solid fa-trash-can"></i> Drop Dupes
+                                    </button>
+                                    <button class="btn-norm-action disabled" id="btn-undo-norm"
+                                        title="Undo last operation">
+                                        <i class="fa-solid fa-rotate-left"></i> Undo
+                                    </button>
+                                </div>
+
+                                <!-- Audit Log / Output Screen -->
+                                <div class="audit-log-panel">
+                                    <div class="audit-header">
+                                        <span>SYSTEM AUDIT LOG</span>
+                                        <span class="pulse-green">● LIVE</span>
+                                    </div>
+                                    <div class="audit-logs-list" id="audit-logs">
+                                        <div class="log-line">[System] Supabase session initialized.</div>
+                                        <div class="log-line">[Data] Loaded 1,240 rows from customer_feedback_2026.csv.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Live Normalizer Dashboard Demo -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-info-column reveal">
+                    <div class="project-meta">
+                        <span class="badge glow-cyan">Python, Supabase, Streamlit</span>
+                        <span class="project-type"><i class="fa-solid fa-database"></i> Full-Stack Data Pipeline</span>
+                    </div>
+                    <h3><a href="https://huggingface.co/spaces/aruna11/Survey_Data_Normalizer" target="_blank"
+                            rel="noopener noreferrer" class="project-title-link">Survey Data Normalizer <i
+                                class="fa-solid fa-arrow-up-right-from-square"
+                                style="font-size: 0.55em; margin-left: 0.3rem;"></i></a></h3>
+                    <p class="project-description">
+                        A powerful, interactive tool to clean, standardize, and analyze raw survey data — backed by
+                        Supabase PostgreSQL. Designed for researchers, analysts, and data engineers who need a fast,
+                        browser-based pipeline to normalize messy survey exports.
+                    </p>
+                    <div class="features-checklist-grid">
+                        <div class="feature-check"><i class="fa-solid fa-circle-check"></i> <span>Drag-and-drop CSV or
+                                Excel files upload</span></div>
+                        <div class="feature-check"><i class="fa-solid fa-circle-check"></i> <span>All datasets saved to
+                                Supabase history for session reload</span></div>
+                        <div class="feature-check"><i class="fa-solid fa-circle-check"></i> <span>Auto-computed metrics:
+                                completeness %, missing, dupes</span></div>
+                        <div class="feature-check"><i class="fa-solid fa-circle-check"></i> <span>Fill/drop missing
+                                values, drop columns, convert types</span></div>
+                        <div class="feature-check"><i class="fa-solid fa-circle-check"></i> <span>Step-by-step undo/redo
+                                and live audit log</span></div>
+                        <div class="feature-check"><i class="fa-solid fa-circle-check"></i> <span>Interactive Plotly
+                                distribution charts & XLSX exports</span></div>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://huggingface.co/spaces/aruna11/Survey_Data_Normalizer" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary">
+                            <span>Launch Live App</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Expertise & Stack</span>
+                <h2 class="section-title">Skills & Toolkit</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-wrapper">
+                <!-- Skill Category: Languages -->
+                <div class="skill-category glass-card reveal" id="skills-lang-card">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-pill">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">Advanced</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-level">Intermediate</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-level">Expert</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">CSS3</span>
+                            <span class="skill-level">Expert</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-level">Intermediate</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Tools & Platforms -->
+                <div class="skill-category glass-card reveal" id="skills-tools-card">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Tools & Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-pill">
+                            <span class="skill-name">GitHub</span>
+                            <span class="skill-level">Intermediate</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-level">Advanced</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">VS Code</span>
+                            <span class="skill-level">Expert</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-level">Intermediate</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Xampp</span>
+                            <span class="skill-level">Intermediate</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Soft Skills -->
+                <div class="skill-category glass-card reveal" id="skills-soft-card">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+                        <h3>Core Strengths</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-pill">
+                            <span class="skill-name">Problem Solving</span>
+                            <span class="skill-level">High</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Collaboration</span>
+                            <span class="skill-level">High</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Quick Learner</span>
+                            <span class="skill-level">High</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">Time Management</span>
+                            <span class="skill-level">Advanced</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-name">AWS Cloud Fundamentals</span>
+                            <span class="skill-level">Learning</span>
+                            <div class="skill-indicator-bar">
+                                <div class="fill" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="certificates-grid">
+                <!-- Cert 1: IBM Blockchain -->
+                <a href="certificates/Aruna IBM BC0202EN Certificate _ Cognitive Class.pdf" target="_blank" class="cert-card glass-card reveal">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-brands fa-ibm"></i>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-issuer">IBM / Cognitive Class</span>
+                        <h4>Blockchain Essentials (BC0202EN)</h4>
+                        <p class="cert-desc">Acquired core principles of distributed ledger systems, blockchain architectures, Hyperledger framework, and smart contracts for business networks.</p>
+                        <span class="cert-action"><i class="fa-solid fa-file-pdf"></i> View Certificate</span>
+                    </div>
+                </a>
+
+                <!-- Cert 2: UI/UX Design -->
+                <a href="certificates/Aruna Devi - UIUX.pdf" target="_blank" class="cert-card glass-card reveal">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-issuer">UI/UX Design Course</span>
+                        <h4>UI/UX Professional Certification</h4>
+                        <p class="cert-desc">Focused on design thinking processes, wireframing, high-fidelity interactive prototyping, user persona modeling, and responsive layout styling in Figma.</p>
+                        <span class="cert-action"><i class="fa-solid fa-file-pdf"></i> View Certificate</span>
+                    </div>
+                </a>
+
+                <!-- Cert 3: Neo4j Graph Database -->
+                <a href="certificates/NEO4J.png" target="_blank" class="cert-card glass-card reveal">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-solid fa-circle-nodes"></i>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-issuer">Neo4j Graph Academy</span>
+                        <h4>Neo4j Certified Database Professional</h4>
+                        <p class="cert-desc">Demonstrated competency in graph database concepts, nodes/relationships design patterns, and executing advanced Cypher queries.</p>
+                        <span class="cert-action"><i class="fa-solid fa-file-image"></i> View Certificate</span>
+                    </div>
+                </a>
+
+                <!-- Cert 4: Cryptography -->
+                <a href="certificates/an-intro-to-cryptography_certificate_of_achievement_b1y342k.pdf" target="_blank" class="cert-card glass-card reveal">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-issuer">NPTEL Online Course</span>
+                        <h4>Introduction to Cryptography</h4>
+                        <p class="cert-desc">Achieved certification in cryptographic algorithms, symmetric & asymmetric encryption techniques, hash protocols, and digital security architecture.</p>
+                        <span class="cert-action"><i class="fa-solid fa-file-pdf"></i> View Certificate</span>
+                    </div>
+                </a>
+
+                <!-- Cert 5: Simplilearn -->
+                <a href="certificates/simplilearn.pdf" target="_blank" class="cert-card glass-card reveal">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-issuer">Simplilearn</span>
+                        <h4>Software Development Certificate</h4>
+                        <p class="cert-desc">Completed advanced curriculum focused on programming practices, core data structures, logical scripting, and database integration workflows.</p>
+                        <span class="cert-action"><i class="fa-solid fa-file-pdf"></i> View Certificate</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-cards-column reveal">
+                    <h3>Contact Information</h3>
+                    <p class="contact-heading-desc">
+                        I am open to internship opportunities, collaborations, and discussions on web development or IoT
+                        project concepts. Let's design something premium.
+                    </p>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">Email Me</span>
+                            <span class="contact-card-value" id="email-address">arunadevi100705@gmail.com</span>
+                        </div>
+                        <button class="copy-btn" id="copy-email-btn" title="Copy to clipboard">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">Call / WhatsApp</span>
+                            <span class="contact-card-value" id="phone-number">+91 6380892587</span>
+                        </div>
+                        <button class="copy-btn" id="copy-phone-btn" title="Copy to clipboard">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-card-icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">LinkedIn</span>
+                            <span class="contact-card-value">Aruna Devi</span>
+                        </div>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="visit-btn"
+                            title="Visit Profile">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-column glass-card reveal">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form" class="contact-form" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="c-name">Your Name</label>
+                            <input type="text" id="c-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-email">Your Email</label>
+                            <input type="email" id="c-email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-message">Message</label>
+                            <textarea id="c-message" rows="5" placeholder="Hi Aruna, I'd love to connect..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" id="contact-submit-btn">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="contact-toast" class="contact-toast-msg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">&lt;Aruna.Dev /&gt;</span>
+                <p>Building high-fidelity interactive digital systems.</p>
+            </div>
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="mailto:arunadevi100705@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+                <p class="copyright">&copy; 2026 Aruna Devi C. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Clipboard feedback element -->
+    <div id="toast-notification" class="toast-popup">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-text">Copied to clipboard!</span>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
